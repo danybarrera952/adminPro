@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { SettingsService } from '../services/service.index';
+declare function iniciar();
 @Component({
   selector: 'app-pages',
   templateUrl: './pages.component.html',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _sv: SettingsService) { }
 
   ngOnInit() {
+
+    iniciar();
   }
 
 }
