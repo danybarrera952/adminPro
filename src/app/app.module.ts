@@ -22,6 +22,7 @@ import { ServiceModule } from './services/service.module';
 // Routes
 
 import { APP_ROUTING } from './app.routes';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -34,7 +35,10 @@ import { APP_ROUTING } from './app.routes';
     BrowserModule,
     APP_ROUTING,
     PagesModule,
-    ServiceModule
+    ServiceModule,
+    ReactiveFormsModule,
+    FormsModule
+
 
   ],
   providers: [],
