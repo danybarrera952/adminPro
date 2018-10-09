@@ -1,8 +1,11 @@
+import { PipesModule } from '../pipes/pipes.module';
 import { NgModule } from '@angular/core';
 
 // modules
 import { SharedModule } from './../shared/shared.module';
 import { ComponentsModule } from '../components/components.module';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -18,6 +21,8 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { ProfileComponent } from './profile/profile.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
    declarations: [
@@ -28,7 +33,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     Graficas1Component,
     AccountSettingsComponent,
     PromesasComponent,
-    RxjsComponent
+    RxjsComponent,
+    ProfileComponent
  ],
  exports: [
   PagesComponent,
@@ -41,7 +47,10 @@ import { RxjsComponent } from './rxjs/rxjs.component';
  imports: [
 SharedModule,
 PAGES_ROUTES,
-ComponentsModule
+ComponentsModule,
+PipesModule,
+FormsModule,
+CommonModule
 
  ]
 
