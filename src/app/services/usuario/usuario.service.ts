@@ -154,4 +154,36 @@ export class UsuarioService {
                     });
   }
 
+  cargarUsuarios( desde: number = 0 ) {
+
+    const url = URL_SERVICES + '/usuario?desde=' + desde;
+
+    return this.http.get(url);
+
+
+  }
+
+  buscarUsuarios( termino: string ) {
+
+    const  url = URL_SERVICES + '/busqueda/coleccion/usuarios/' + termino ;
+
+    return this.http.get(url).map((resp: any) => resp.usuarios );
+
+  }
+
+  borrarUsuario( id) {
+
+    let url = URL_SERVICES + '/usuario/' + id;
+    url +=  '?token' + this.token;
+
+    return this.http.delete( url )
+                    .map(resp => {
+
+                      swal('Usuario Borrado', 'El Usuario ha sido borrado correctamente');
+                      return true;
+
+                    });
+
+  }
+
 }

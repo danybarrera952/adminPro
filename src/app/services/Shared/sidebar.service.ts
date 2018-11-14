@@ -11,11 +11,21 @@ menu: any = [
       {titulo: 'progressBar', url: '/progress'},
       {titulo: 'Graficas', url: '/graficas'},
       {titulo: 'Promesas', url: '/promesas'},
-      {titulo: 'Promesas', url: '/rxjs'},
+      {titulo: 'Promesas', url: '/rxjs'}
 
 
     ]
-  }
+  },
+  {
+  titulo: 'Mantenimiento',
+  icono: 'mdi mdi-folder-lock-open',
+  submenu: [
+  {titulo: 'Usuarios', url: '/usuarios'},
+  {titulo: 'Medicos', url: '/medicos'},
+  {titulo: 'Hospitales', url: '/hospitales'}
+]
+}
+
 ];
   constructor() { }
 

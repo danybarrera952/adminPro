@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { GraficosDonnaComponent } from './GraficosDonas/graficos-donna.component';
 import { ChartsModule } from 'ng2-charts';
 
+import { BrowserModule } from '@angular/platform-browser';
+
 
 
 
@@ -24,7 +26,8 @@ import { ChartsModule } from 'ng2-charts';
   ],
   imports: [
    FormsModule,
-   ChartsModule
+   ChartsModule,
+   BrowserModule
   ],
 })
 export class ComponentsModule { }

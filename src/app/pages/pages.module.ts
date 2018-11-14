@@ -23,6 +23,9 @@ import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CommonModule } from '@angular/common';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { UploadModalComponent } from '../components/upload-modal/upload-modal.component';
+
 
 @NgModule({
    declarations: [
@@ -34,7 +37,10 @@ import { CommonModule } from '@angular/common';
     AccountSettingsComponent,
     PromesasComponent,
     RxjsComponent,
-    ProfileComponent
+    ProfileComponent,
+    UsuariosComponent,
+    UploadModalComponent
+
  ],
  exports: [
   PagesComponent,
