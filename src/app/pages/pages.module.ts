@@ -25,6 +25,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { CommonModule } from '@angular/common';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { UploadModalComponent } from '../components/upload-modal/upload-modal.component';
+import { HospitalesComponent } from './hospitales/hospitales.component';
+import { MedicosComponent } from './medicos/medicos.component';
+import { MedicoComponent } from './medicos/medico.component';
+
 
 
 @NgModule({
@@ -39,7 +43,10 @@ import { UploadModalComponent } from '../components/upload-modal/upload-modal.co
     RxjsComponent,
     ProfileComponent,
     UsuariosComponent,
-    UploadModalComponent
+    UploadModalComponent,
+    HospitalesComponent,
+    MedicosComponent,
+    MedicoComponent
 
  ],
  exports: [

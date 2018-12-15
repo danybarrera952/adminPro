@@ -2,7 +2,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SettingsService , SidebarService, SharedService, UsuarioService, LoginguardGuard, SubirArchivoService } from './service.index';
+// tslint:disable-next-line:max-line-length
+import { SettingsService , SidebarService, SharedService, UsuarioService, LoginguardGuard, SubirArchivoService, HospitalService, MedicosService } from './service.index';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { UploadmodalServiceService } from '../components/upload-modal/uploadmodal-service.service';
 
@@ -19,7 +20,10 @@ import { UploadmodalServiceService } from '../components/upload-modal/uploadmoda
        UsuarioService,
         LoginguardGuard,
         SubirArchivoService,
-         UploadmodalServiceService],
+         UploadmodalServiceService,
+         HospitalService,
+         MedicosService
+        ],
   declarations: []
 })
 export class ServiceModule { }
