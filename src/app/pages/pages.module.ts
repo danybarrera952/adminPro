@@ -28,6 +28,7 @@ import { UploadModalComponent } from '../components/upload-modal/upload-modal.co
 import { HospitalesComponent } from './hospitales/hospitales.component';
 import { MedicosComponent } from './medicos/medicos.component';
 import { MedicoComponent } from './medicos/medico.component';
+import { BusquedaComponent } from './busqueda/busqueda.component';
 
 
 
@@ -46,7 +47,8 @@ import { MedicoComponent } from './medicos/medico.component';
     UploadModalComponent,
     HospitalesComponent,
     MedicosComponent,
-    MedicoComponent
+    MedicoComponent,
+    BusquedaComponent
 
  ],
  exports: [

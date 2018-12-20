@@ -72,7 +72,7 @@ export class RegisterComponent implements OnInit {
 
     if (!this.forma.value.condiciones) {
 
-     swal('Registro exitoso...', 'Debe aceptar las condiciones', 'warning');
+     swal( 'Debe aceptar las condiciones', 'warning');
       return;
     }
 
